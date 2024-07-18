@@ -17,22 +17,27 @@
 <body>
 
     <header class="page-header">
-        <img src="img/mylogo.png" width="200" height="70" alt="logo" id="rot" class="page-header__item">
+        <a class="title">Priyanka Nalla</a>
+
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
                     <a href="index.html" role="menuitem"
-                        class="navigation-list__item navigation-list__item--active">Home</a>
+                        class="navigation-list__item navigation-list__item--active"><button
+                            class="button-link">Home</button></a>
                 </li>
                 <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
 
+                    <a href="about.html" role="menuitem" class="navigation-list__item"> <button
+                            class="button-link">About</button></a>
                 </li>
                 <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                    <a href="work.html" role="menuitem" class="navigation-list__item"><button
+                            class="button-link">Work</button></a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item"><button
+                            class="button-link">Contact</button></a>
                 </li>
             </ul>
         </nav>
@@ -46,19 +51,6 @@
         <h1>My Work</h1>
         <div class="project">
             <!-- Grid items will live here -->
-            <div class="project-list">
-                <h2>To-Do-List</h2>
-                <img src="img/To-Do.png" class="project-img" alt="To-Do-List pic">
-                <p>
-                    The "To Do List App" was designed to help users efficiently manage their daily tasks. It provides a
-                    simple and intuitive interface for adding, deleting, and marking tasks as completed.
-                </p>
-                <br>
-                <h3>Technologies used:</h3>
-                <p>JHTML5, CSS, JavaScript, jQuery, jQuery UI, Bootstrap,
-                </p>
-                <a href="https://github.com/Priyankareddy-nalla/to-do-list-app">Github</a>
-            </div>
 
             <div class="project-list">
                 <h2>Pokedex</h2>
@@ -70,24 +62,26 @@
                 </p>
                 <br>
                 <h4>Technologies used:</h4>
-                <p>Javascript,HTML,CSS and Bootstrap frmaework used.
+                <p>Javascript,HTML,CSS and Bootstrap framework used.
                 </p>
-                <a href="https://github.com/Priyankareddy-nalla/myFirst-js-app">Github</a>
+                <div> <a class="button-link" href="https://github.com/Priyankareddy-nalla/myFirst-js-app">Github</a>
+                    <a class="button-link" href="https://priyankareddy-nalla.github.io/myFirst-js-app/">App Live</a>
+                </div>
             </div>
             <div class="project-list">
                 <h2>myMovie-app</h2>
                 <img src="img/myMovie-app.png" class="project-img" alt="myMovie-app pic">
-
                 <p>It is a server-side based web application.This application will provide users with access to
                     information about different movies, directors. Users will be able to sign up, update their personal
                     information, and create a list of their favorite movies. This app interacts with a database that
                     stores data about different movies.</p>
-                <h3>Technologies used:</h3>
+                <h4>Technologies used:</h4>
                 <p>Backend: Node.js, Express.
                     Authentication: JWT (JSON Web Tokens).
                     Database: MongoDB Atlas.
                 </p>
-                <a href="https://github.com/Priyankareddy-nalla/myMovie-app">Github</a>
+                <a class="button-link" href="https://github.com/Priyankareddy-nalla/myMovie-app"
+                    target="_blank">Github</a>
             </div>
             <div class="project-list">
                 <h2>MyFlix</h2>
@@ -96,14 +90,16 @@
                 <p>MyFlix-app is a web application will provide users with access to information about different movies,
                     directors, and genres. Users will be able to sign up, update their personal information, and create
                     a list of their favorite movies.</p>
-                <h3>Technologies used:</h3>
+                <h4>Technologies used:</h4>
                 <p>Frontend: React.
                     Backend: Node.js, Express, MongoDB.
                     Authentication: JWT (JSON Web Tokens).
                     Database: MongoDB Atlas.
-
                 </p>
-                <a href="https://github.com/Priyankareddy-nalla/myFlix-client">Github</a>
+                <div> <a class="button-link" href="https://github.com/Priyankareddy-nalla/myFlix-client"
+                        target="_blank ">Github</a>
+                    <a class="button-link" href="https://myfirstappmovie.netlify.app/" target="_blank">App Live</a>
+                </div>
             </div>
             <div class="project-list">
                 <h2>MyApp</h2>
@@ -111,28 +107,68 @@
 
                 <p>MyApp is a serverless, progressive web application (PWA) with React using a test-driven development
                     (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.</p>
-                <h3>Technologies used:</h3>
+                <h4>Technologies used:</h4>
                 <p>Serverless Backend:AWS Lambda,OAuth2 <br>
                     PWA:React for frontend development.<br>
                     Service Workers for offline support.<br>
                     Web App Manifest for add-to-home-screen prompt.<br>
                     Testing: Jest, Puppeteer.<br>
-                    Deployed on GitHub Pages.<br>
                     Data Visualization: Recharts.
                 </p>
-                <div> <a href="https://github.com/Priyankareddy-nalla/myApp">Github</a></div>
-                <a href="https://priyankareddy-nalla.github.io/myApp">App</a>
+                <div> <a class="button-link" href="https://github.com/Priyankareddy-nalla/myApp"
+                        target="_blank">Github</a>
+                    <a class="button-link" href="https://priyankareddy-nalla.github.io/myApp" target="_blank">App
+                        Live</a>
+                </div>
 
             </div>
+            <div class="project-list">
+                <h2>ChatApp</h2>
+                <video src="ChatApp.mp4" controls height="300"></video>
+                <p>
+                    Chat app for mobile devices using React Native.
+                    The app will provide users with a chat interface and options to share images and their location.
+                </p>
+
+                <h3>Technologies used:</h3>
+                <p>Framework: React Native, <br> Database: Google Firebase</p>
+                <a class="button-link" href="https://github.com/Priyankareddy-nalla/chatApp" target="_blank">Github</a>
+            </div>
+            <div class="project-list">
+                <h2>MyFlix-Angular</h2>
+                <img src="img/MyFlix-Angular.png" class="project-img" alt="MyFlix-Angular pic">
+
+                <p>This project involves developing the client-side application for myFlix, based on its existing
+                    server-side code which includes a REST API and database.
+                    The application will be built using the Angular framework and will include comprehensive supporting
+                    documentation.
+                </p>
+                <h3>Technologies used:</h3>
+                <p>Frontend: Angualr.<br>
+                    Backend: Node.js, Express, MongoDB.<br>
+                    Authentication: JWT (JSON Web Tokens).<br>
+                    Database: MongoDB Atlas.
+
+                </p>
+                <div> <a class="button-link" href="https://github.com/Priyankareddy-nalla/myFlix-angular-app"
+                        target="_blank">Github</a>
+                    <a class="button-link" href="https://priyankareddy-nalla.github.io/myFlix-angular-app/"
+                        target="_blank">App Live</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <footer class="page-footer">
         <p>Find me on</p>
         <div class="social-media">
-            <img src="img/github.svg" width="30" height="30" alt="github">
-            <img src="img/twitter.svg" width="30" height="30" alt="twiteer">
-            <img src="img/linkedin.svg" width="30" height="30" alt="linkedin">
+            <a href="https://github.com/Priyankareddy-nalla" target="_blank">
+                <img src="img/github.svg" width="30" height="30" alt="github"></a>
+            <a href="https://twitter.com/PriyankareddyNa" target="_blank">
+                <img src="img/twitter.svg" width="30" height="30" alt="twiteer"></a>
+            <a href="https://www.linkedin.com/in/priyanka-nalla-a98830253/" target="_blank">
+                <img src="img/linkedin.svg" width="30" height="30" alt="linkedin"></a>
         </div>
     </footer>
 
