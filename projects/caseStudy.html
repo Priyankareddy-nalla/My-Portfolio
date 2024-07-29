@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>MyFlix Case Study</title>
+  <link rel="stylesheet" href="../css/caseStudy.css">
+</head>
+
+<body class="CaseStudy">
+
+  <header>
+    <a class="title" href="#">Case Study: MyFlix Full-Stack Web Application
+    </a>
+  </header>
+
+  <main>
+    <section class="page">
+      <div class="container">
+        <div class="div-item">
+          <h1>Overview</h1>
+          <p>MyFlix is a full-stack web application developed using the MERN and MEAN stacks.
+            The app allows users to sign up and log in. Logged-in users can access a collection
+            of movies, including details about their directors and genres. Users can add movies
+            to their favorite list and view this list in their profile. They can also update
+            their user information and delete their account if they wish.
+          </p>
+          <h1>Purpose and Context</h1>
+          <p>The MyFlix project was created during my web development course at CareerFoundry.
+            The main goal was to demonstrate my skills in JavaScript and TypeScript development.
+            This project highlights my experience with frameworks like React and Angular, as well
+            as my ability to write clear documentation. It gave me the opportunity to apply what I
+            learned in a real-world setting.
+          </p>
+        </div>
+        <img src="../img/MyFlix.png" alt="myFlix-react pic" class="project-image">
+
+      </div>
+      <div class="container">
+        <div class="div-item">
+
+          <h3>Duration</h3>
+          <p>
+            The project was completed over a 15-week period, from initial design to deployment.
+          </p>
+          <h3>Deadlines</h3>
+          <p>
+            Milestones included completing the back-end API, developing front-end interfaces, and conducting user
+            testing.
+          </p>
+
+          <h2>Tools and Technologies</h2>
+          <ul>
+            <li>Back-end: Node.js, Express, MongoDB</li>
+            <li>Front-end: React (for MERN stack implementation), Angular (for MEAN stack implementation)</li>
+            <li> Languages: JavaScript, TypeScript</li>
+            <li>Tools: Postman for API testing, MongoDB Atlas for database management, Git and GitHub for version
+              control</li>
+            <li>Skills: RESTful API development, CRUD operations, responsive UI design, user authentication
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src="../img/MEAN1.jpeg" alt="angular-skills" class="skills-img">
+          <img src="../img/MERN.png" alt="react-skills" class="skills-img">
+        </div>
+
+        <div class="developement-process">
+          <h1>Development Process</h1>
+
+          <div class="container">
+            <div class="div-item">
+              <h2>Server-side project:</h2>
+              <p>
+                I developed a RESTful API using Node.js and Express, which interacts with a MongoDB database.
+                The API supports standard HTTP methods such as GET and POST for performing CRUD (Create, Read,
+                Update, Delete) operations on movie information. It returns data in JSON format.
+              </p>
+
+              <a href="https://myflix-app-deh4.onrender.com/documentation" class="documentation-link"
+                target="_blank">Endpoints</a>
+
+              <p>
+                For testing the API endpoints, I utilized the Postman tool to ensure their functionality and
+                reliability. Additionally, I documented the project using JSDoc comments and TypeDoc to
+                provide a clear and comprehensive understanding of the API's functionality and usage.
+              </p>
+            </div>
+
+            <div class="image-container">
+              <img src="../img/Postman.png" class="caseStudy-img" alt="Postman">
+              <div class="overlay">
+                <div class="text">Used Postman to test API endpoints.
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="container">
+            <div class="div-item">
+
+              <h2>Client-side project:</h2>
+              <p>For the client-side development, I used both React and Angular frameworks to create a dynamic and
+                responsive user interface. By utilizing these frameworks,
+                I was able to efficiently fetch movie details from the database through server-side API endpoints. This
+                data integration allowed me to dynamically display and manage movie information, such as titles and
+                director name, directly within the front-end application. React's component-based architecture and
+                Angular's
+                data-binding features enabled seamless updates and interactive elements, enhancing the overall user
+                experience with real-time content and intuitive navigation.</p>
+            </div>
+            <div class="image-container">
+
+              <img src="../img/Tsdoc.png" alt="Typedoc-img" class="caseStudy-img">
+              <div class="overlay">
+                <div class="text">Documented functions using TSDoc comments.
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="final-product">
+
+            <h1>Final product</h1>
+            <p>Here is the final product of the myFlix app, presented in a slideshow format showcasing various page
+              views.</p>
+            <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="../img/Welcome.png" style="width:100%">
+                <div class="caption">Welcome page</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="../img/Mainview.png" style="width:100%">
+                <div class="caption">Main view</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="../img/Movieview.png" style="width:100%">
+                <div class="caption">Movie view</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">4/ 5</div>
+                <img src="../img/Profile.png" style="width:100%">
+                <div class="caption">Profile view</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="../img/Profileview.png" style="width:100%">
+                <div class="caption">Fav movies list</div>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+
+            </div>
+
+            <script>
+              let slideIndex = 1;
+              showSlides(slideIndex);
+
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+
+              function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+              }
+            </script>
+
+          </div>
+
+
+
+          <h2>Challenges and Solutions</h2>
+          <ul>
+            <li>Deployment Issues in Angular: Faced challenges deploying the Angular app on GitHub Pages due to
+              configuration issues.
+
+            <li>Solution: Resolved by using the angular-cli-ghpages package to automate the deployment process and
+              ensure that build artifacts were correctly published to GitHub Pages.</li>
+            </li>
+            <li>Git Merge Conflicts in React: Encountered merge conflicts during the deployment of the React app,
+              particularly when integrating branches with different feature sets.
+
+            </li>
+            <li>Solution: Implemented a strategy for resolving merge conflicts by carefully reviewing changes, using git
+              mergetool, and maintaining clear commit histories. This helped to minimize conflicts and ensure smooth
+              integration of new features.</li>
+          </ul>
+        </div>
+        <h2>Retrospective</h2>
+
+        <div class="grid-container">
+          <div class="grid-item">
+            <i class="fas fa-thumbs-o-up"></i><span>What Went Well</span>
+
+            <p>Effectively utilizing both React and Angular, I developed dynamic and responsive user interfaces while
+              ensuring seamless integration with server-side APIs. This approach facilitated smooth communication
+              between the front-end and back-end, resulting in a cohesive and intuitive application experience.</p>
+          </div>
+
+          <div class="grid-item">
+            <i class="fas fa-tools"></i><span>Areas for Improvement</span>
+            <p>Developed a recommendation system to personalize the user experience by analyzing viewing history and
+              preferences, tailoring suggestions to each user’s unique interests.</p>
+          </div>
+          <div class="grid-item">
+            <i class="fas fa-lightbulb"></i> <span>Lessons Learned</span>
+            <p>Learned the strengths and differences between React and Angular, which will help with future projects.
+              Improved my ability to handle asynchronous tasks and manage application state. Focused on implementing
+              security measures to keep user data safe</p>
+          </div>
+          <div class="grid-item">
+            <i class="fas fa-graduation-cap"></i><span>Skill Development</span>
+            <i class="fas fa-bullseye"></i> <span>Future Goals</span>
+
+            <p>Explored advanced state management tools like Redux for handling complex applications. Focused
+              on using automated testing to improve the reliability of future projects. Committed to staying updated
+              with the latest web technologies and best practices.</p>
+          </div>
+        </div>
+
+        <h2>Final Thoughts</h2>
+
+        <p>The MyFlix project was a valuable experience, applying the knowledge gained from the CareerFoundry course in
+          a real-world setting. It showcased my ability to solve complex problems, adapt to new tools, and create a
+          polished, user-friendly product. The skills and insights gained from this project will guide my future work
+          and support my continued growth as a web developer.
+        </p>
+
+      </div>
+      <div class="credits">
+        <h2>Credits</h2>
+        <h3>Role: Lead Developer</h3>
+        <h3>Tutor: Christopher Amanor</h3>
+        <h3> Mentor: Mohamed Riaad</h3>
+        <a href="../work.html" class="documentation-link">Back</a>
+
+      </div>
+
+    </section>
+  </main>
+</body>
+
+</html>
