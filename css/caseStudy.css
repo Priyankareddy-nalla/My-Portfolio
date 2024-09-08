@@ -12,8 +12,11 @@ a {
 }
 
 header {
+  z-index: 1000;
+  position: fixed;
   background-color: #b7a08b;
   padding: 20px;
+  width: 100%;
   text-align: center;
 }
 
@@ -94,6 +97,7 @@ p {
 
   .page {
     padding: 15px;
+
   }
 
   .project-image {
