@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>MyFlix Case Study</title>
+    <link rel="stylesheet" href="../css/caseStudy.css">
+</head>
+
+<body class="CaseStudy">
+
+    <header>
+        <a class="title" href="#">MyFlix AWS Deployment: Building a Three-Tier Cloud-Native Application
+
+        </a>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <main>
+        <section class="page">
+            <div class="container">
+                <div class="div-item">
+                    <h1>Overview</h1>
+                    <p>This case study outlines the process of deploying a three-tier web application—MyFlix—on Amazon
+                        Web Services (AWS). The application consists of:
+
+                        <li>MongoDB and Node.js/Express API as the backend, deployed on EC2 instances.</li>
+                        <li>A React client hosted as a static website in an S3 bucket.</li>
+                        <li> An AWS Lambda function triggered by image uploads to S3 for serverless image processing.
+                        </li>
+                    </p>
+                    <h1>Purpose and Context</h1>
+                    <p>The purpose of this project is to deploy the MyFlix web application on Amazon Web Services (AWS),
+                        following cloud-native principles for scalability, reliability, and efficiency. The application
+                        consists of a Node.js/Express API, a MongoDB database, and a React frontend, all integrated into
+                        AWS services. The backend runs on EC2 instances, the frontend is hosted on S3 as a static
+                        website, and AWS Lambda functions process images uploaded to S3. By leveraging AWS's managed
+                        services, the project ensures fast, global access, automatic scaling, and minimal infrastructure
+                        management, while providing an optimized user experience and aligning with modern DevOps
+                        practices.
+                    </p>
+                </div>
+                <img src="../img/webapp.png" alt="myFlix-react pic" class="project-image">
+
+            </div>
+            <div class="container">
+                <div class="div-item">
+
+                    <h3>Duration</h3>
+                    <p>
+                        The project was completed in 7 weeks, from the initial design phase to the final deployment.
+
+                    </p>
+                    <h3>Deadlines</h3>
+                    <p>
+                        Milestones included completing the deployment of the back-end API on EC2, hosting the front-end
+                        on S3, integrating AWS Lambda for image processing and conducting performance and user testing.
+                    </p>
+
+                    <h2>Tools and Technologies</h2>
+                    <ul>
+                        <li>Amazon EC2 (Elastic Compute Cloud)</li>
+                        <li>Amazon S3 (Simple Storage Service)</li>
+                        <li> AWS Lambda</li>
+                        <li>AWS SDK (Software Development Kit)
+                        </li>
+                        <li>Amazon IAM (Identity and Access Management)
+                        </li>
+                        <li>Amazon CloudWatch
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="image-container"><br>
+                    <img src="../img/Instances.png" alt="Instances" class="caseStudy-img">
+                    <br>
+                    <img src="../img/S3-bucket.png" alt="S3 bucket" class="caseStudy-img">
+                </div>
+
+                <div class="development-process">
+                    <h1>Deployment Process</h1>
+
+                    <div class="container">
+                        <div class="div-item">
+                            <p>
+                                The deployment of the MyFlix web application on AWS begins with setting up necessary AWS
+                                resources, such as IAM roles, EC2 instances, and an S3 bucket for hosting the React
+                                frontend. The backend, a Node.js/Express API, is deployed on the EC2 instance,
+                                connecting to a MongoDB database. The React app is built and uploaded to S3, enabling
+                                static website hosting. For image upload and processing, an S3 bucket and Lambda
+                                function are set up to handle automatic image resizing. The frontend and backend are
+                                integrated using the AWS SDK, and CloudFront is configured for global content delivery.
+                                Route is used to manage the domain and direct traffic to the appropriate resources.
+                                After deploying, the application is tested for functionality, and CloudWatch is set up
+                                to monitor performance. Finally, auto-scaling is enabled for the EC2 instances to ensure
+                                the application can handle increased traffic. </p>
+
+
+
+                        </div>
+
+                        <div class="image-container">
+                            <img src="../img/Lambda-function.png" class="caseStudy-img" alt="Lambda">
+                            <div class="overlay">
+                                <div class="text">The Lambda function in the MyFlix project was used for image
+                                    processing.
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="final-product">
+
+                <h1>Final product</h1>
+                <p>Here is the final product of the MyFlix app, presented in a video format showcasing various page
+                    views, including the deployment of the app on AWS.</p>
+                <video src="../Final-app.mov" controls width="50%" height="300"></video>
+
+                <h2>Challenges and Solutions</h2>
+                <ul>
+                    <li>One of the main challenges I encountered during the deployment process was configuring the
+                        Application Load Balancer (ALB). Initially, I faced difficulties in properly setting up the ALB
+                        to route traffic effectively between multiple EC2 instances. After researching online and
+                        consulting with my mentor, I was able to understand the proper configuration steps, such as
+                        setting up target groups, defining listener rules and ensuring security groups allowed proper
+                        traffic flow. With this guidance, I successfully configured the ALB, enabling it to efficiently
+                        distribute traffic across my backend instances, improving the app's scalability.</li>
+                </ul>
+            </div>
+            <h2>Retrospective</h2>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <i class="fas fa-thumbs-o-up"></i><span>What Went Well</span>
+
+                    <p>The deployment of the MyFlix app went smoothly, with successful setup of EC2, S3, Lambda and
+                        CloudFront for optimal performance. The integration of AWS services ensured scalability, ease of
+                        management and efficient image processing.</p>
+                </div>
+
+                <div class="grid-item">
+                    <i class="fas fa-tools"></i><span>Areas for Improvement</span>
+                    <p>One area for improvement would be better documentation of the deployment process to streamline
+                        future updates and troubleshooting. Additionally, automating more parts of the workflow, such as
+                        infrastructure provisioning with CloudFormation or Terraform, could further reduce manual effort
+                        and improve efficiency during deployment and scaling.</p>
+                </div>
+                <div class="grid-item">
+                    <i class="fas fa-lightbulb"></i> <span>Lessons Learned</span>
+                    <p>I learned the importance of thorough planning and understanding AWS services before starting the
+                        deployment process. The integration of multiple services like EC2, S3, Lambda and CloudFront
+                        requires careful configuration to ensure smooth communication between components. I also
+                        realized the value of seeking help from mentors and leveraging online resources when faced with
+                        challenges, as it helped me overcome roadblocks quickly. Additionally, automating infrastructure
+                        setup and having proper monitoring in place are crucial for long-term scalability and
+                        performance.</p>
+                </div>
+                <div class="grid-item">
+                    <i class="fas fa-graduation-cap"></i><span>Skill Development</span>
+                    <i class="fas fa-bullseye"></i> <span>Future Goals</span>
+
+                    <p>Throughout this project, I developed strong skills in cloud infrastructure management,
+                        particularly with AWS services such as EC2, S3, Lambda and CloudFront. I gained hands-on
+                        experience in deploying full-stack applications and integrating serverless functions for
+                        efficient image processing. Moving forward, I aim to further enhance my expertise in
+                        Infrastructure-as-Code using CloudFormation or Terraform and explore advanced AWS services like
+                        AWS RDS for database management and Elastic Beanstalk for simplified application deployment. My
+                        future goal is to gain proficiency in building fully automated, scalable cloud-native
+                        applications with continuous integration and continuous deployment (CI/CD) pipelines.</p>
+                </div>
+            </div>
+
+            <h2>Final Thoughts</h2>
+
+            <p>Deploying the MyFlix app on AWS was a valuable learning experience that deepened my understanding of
+                cloud computing and infrastructure management. While there were challenges along the way, especially
+                with configuring the Application Load Balancer, overcoming them enhanced my problem-solving skills. The
+                project not only strengthened my technical abilities in deploying full-stack applications but also
+                highlighted the importance of leveraging cloud services to ensure scalability, reliability and
+                efficiency. Moving forward, I’m excited to apply what I’ve learned to more complex projects and continue
+                growing my cloud expertise.
+            </p>
+            <!-- </div> -->
+
+            <div class="credits">
+                <h2>Credits</h2>
+                <h3>Role: Lead Developer</h3>
+                <h3> Mentor: Great Onosu</h3>
+                <a href="../work.html" class="documentation-link">Back</a>
+
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
