@@ -24,36 +24,37 @@
                 <li role="presentation">
                     <a href="index.html" role="menuitem"
                         class="navigation-list__item navigation-list__item--active"><button
-                            class="button-link">Home</button></a>
+                            class="button-link" data-key="home">Home</button></a>
                 </li>
                 <li role="presentation">
 
                     <a href="about.html" role="menuitem" class="navigation-list__item"> <button
-                            class="button-link">About</button></a>
+                            class="button-link" data-key="about">About</button></a>
                 </li>
                 <li role="presentation">
                     <a href="work.html" role="menuitem" class="navigation-list__item"><button
-                            class="button-link">Work</button></a>
+                            class="button-link" data-key="work">Work</button></a>
                 </li>
                 <li role="presentation">
                     <a href="contact.html" role="menuitem" class="navigation-list__item"><button
-                            class="button-link">Contact</button></a>
+                            class="button-link" data-key="contact">Contact</button></a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-
+        
         <section class="page">
 
             <div>
                 <h2 class="text2"> Hi I'm <span>Priyanka</span></h2>
-                <h3>Full stack web developer </h3>
+                <h3>QA Engineer & Software Tester</h3>
 
-                <p>
+                <p class="home-intro" data-key="homeIntro">
                     Welcome to my portfolio!
-                    Here, you'll find information about my skills, projects, and how to get in touch. Let's create
-                    something amazing together!
+                    I am a Software Test Engineer with over 4 years of experience in software quality assurance, functional testing, regression testing, defect management and API testing. 
+                    I am passionate about delivering high-quality software and continuously expanding my skills in test automation and modern web technologies.
+                     Explore my projects, skills and experience and feel free to get in touch!
                 </p>
             </div>
             <a class="link" href="work.html">Check out some of my code</a>
@@ -76,9 +77,16 @@
             <br>
         </footer>
 
+            
         <!-- <script src="js/tota11y.min.js"></script> -->
 
+          
+          <!-- Language Switcher -->
+          <button onclick="changeLanguage('en')">EN</button>
+          <button onclick="changeLanguage('de')">DE</button>
+          
 
+<script src="scripts.js"></script>
 
     </main>
 </body>
