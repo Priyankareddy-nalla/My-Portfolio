@@ -182,9 +182,9 @@ span {
 .profile__portrait {
   width: 350px;
   height: 350px;
-  border-radius: 50%;
+  border-radius: 20%;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 300px;
 }
 
 /* About Me Section */
